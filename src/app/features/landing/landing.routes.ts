@@ -5,6 +5,6 @@ export const landingRoutes: Routes = [
     {
         path: '',
         component: LandingComponent,
-        title: 'Home'
+        title: 'Home',
     },
 ];

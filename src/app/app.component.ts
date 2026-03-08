@@ -17,13 +17,15 @@ export class AppComponent implements OnInit, OnDestroy {
 
     ngOnInit(): void {
         // Set initial lang attribute
-        this.setHtmlLangAttribute(this.translate.getCurrentLang() || this.translate.getFallbackLang() || "en");
+        this.setHtmlLangAttribute(
+            this.translate.getCurrentLang() || this.translate.getFallbackLang() || 'en',
+        );
 
         // Subscribe to language changes
         this.langChangeSubscription = this.translate.onLangChange.subscribe(
             (event: LangChangeEvent) => {
                 this.setHtmlLangAttribute(event.lang);
-            }
+            },
         );
     }
 
