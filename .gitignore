@@ -42,3 +42,12 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Playwright test artifacts
+/playwright-report
+/test-results
+
+# Other
+/.junie
+/.roo
+/.cline

@@ -1,4 +1,4 @@
-# Untitled
+# Torneo v2
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
 
@@ -46,13 +46,48 @@ ng test
 
 ## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+For end-to-end (e2e) testing using [Playwright](https://playwright.dev/), follow these steps:
+
+1.  **Install browsers:**
+    Before running the tests for the first time, you need to install the necessary browsers:
+
+    ```bash
+    npx playwright install
+    ```
+
+2.  **Run tests (headless):**
+
+    ```bash
+    npm run e2e
+    ```
+
+3.  **Run tests with UI mode:**
+
+    ```bash
+    npm run e2e:ui
+    ```
+
+4.  **Run accessibility tests:**
+
+    ```bash
+    npm run e2e:a11y
+    ```
+
+Tests are located in the `e2e/regression` directory.
+
+## Linting
+
+To check the project for linting issues (Angular ESLint, Stylelint, and Prettier), run:
 
 ```bash
-ng e2e
+npm run lint
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+To automatically fix most linting issues, run:
+
+```bash
+npm run lint:fix
+```
 
 ## Additional Resources
 
